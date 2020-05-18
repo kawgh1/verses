@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-    height: 140vh;
+    height: 150vh;
 }
 
 
@@ -35,14 +35,14 @@ h3 {
 	letter-spacing: 0.1em;
 }
 
-/*.content{
+.content{
 	min-height: 100%;
-}*/
+}
 
-/*.content-inside{
+.content-inside{
 	padding: 20px;
 	padding-bottom: 50px;
-}*/
+}
 
 .footer {
 	font-size: 1.2vh;
