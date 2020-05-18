@@ -59,6 +59,12 @@ h3 {
 
 }
 
+.verse {
+	font-size: 1em;
+	letter-spacing: .5em;
+
+}
+
 .btn {
   background-color: #4CAF50; /* Green */
   font-size: 2vh;
