@@ -8,7 +8,6 @@ html, body {
 
 body {
 	font: 'Raleway', sans-serif;
-	font-size: 1.5em;
 	color: rgba(255, 255, 255, 0.6);
 	text-align: center;
 	text-transform: uppercase;
@@ -37,6 +36,8 @@ h3 {
 	letter-spacing: 0.1em;
 }
 
+p {font-size: 1.5em;}
+
 .content{
 	min-height: 100%;
 }
@@ -56,12 +57,14 @@ h3 {
 p .light {
 	font-size: .8em;
 	letter-spacing: .2em;
+	opacity: 1.0;
 
 }
 
 p .verse {
 	font-size: 1.2em;
 	letter-spacing: .5em;
+	opacity: 1.0;
 
 }
 
