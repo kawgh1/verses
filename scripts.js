@@ -15,15 +15,14 @@ var p8 = document.getElementById("p8");
 var plist = [p1, p2, p3, p4, p5, p6, p7, p8];
 
 
-
+// color array will contain 6 rgb values to make 2 colors (3 each) for a linear-gradient top to bottom
 var color = [];
 
 function getRGBvalue() {
 	return Math.floor(Math.random() * 256);
-	
 }
 
-
+// set 6 rgb values
 function setColors(){
 	
 	color.push(getRGBvalue());
@@ -33,14 +32,6 @@ function setColors(){
 	color.push(getRGBvalue());
 	color.push(getRGBvalue());
 };
-
-
-	// color.push(getRGBvalue());
-	// color.push(getRGBvalue());
-	// color.push(getRGBvalue());
-	// color.push(getRGBvalue());
-	// color.push(getRGBvalue());
-	// color.push(getRGBvalue());
 
 var verses = [
 	[['Psalms 1'], [['Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers;'], ['but his delight is in the law of the Lord, and on his law he meditates day and night.'], ['He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither.'], ['In all that he does, he prospers.'], ['The wicked are not so, but are like chaff that the wind drives away.'], ['Therefore the wicked will not stand in the judgment, nor sinners in the congregation of the righteous;'], ['for the Lord knows the way of the righteous, but the way of the wicked will perish.']]],
@@ -60,64 +51,44 @@ var verses = [
 
 
 function newQuote(){
+	// randomNumber is the same number throughout this function
 
 	// clear p tags of any values in the plist
 	for(var i=0; i < plist.length; i++){
 		plist[i].textContent = '';
 	}
-
-	
-
+	// pick a random verse in the verse array
 	var randomNumber = Math.floor(Math.random() * (verses.length));
 	verse.textContent = verses[randomNumber][0];
 
-	// verses[randomNumber][1].forEach(item => p1.textContent = item);
-	// p2.textContent = verses[randomNumber][1];
-	
+	// for that verse, grab each sentence for that verse
+	// and assign it to a <p> tag on the page
 	for(var i=0; i < verses[randomNumber][1].length; i++){
-
-		// p1.textContent = verses[randomNumber][1][i];
-		// verses[randomNumber][1].forEach(item => plist[i].textContent = item);
 		plist[i].textContent = verses[randomNumber][1][i];
 	}
 	
 	// css.textContent = css.textContent.split('~').join(' <br> ');
 
 }
-	
+
+// generate random color gradient each visit (not same starting color each time)
 setGradient();
 
-// color = setColors();
-
-
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 function setGradient() {
 	color = [];
 	setColors();
 	newQuote();
 
-	body.style.background = "linear-gradient(rgb(" 
-							+ color[0] + ", "
-							+ color[1] + ", "
-							+ color[2] + "), rgb("
-
-							+ color[3] + ", "
-							+ color[4] + ", "
-							+ color[5] + ")) no-repeat scroll 0% 0%";
-
-							// body.style.background = "linear-gradient('red', 'blue');"
-							// css.textContent = body.style.background + ";";
-							// console.log('css.textContent =', body.style.background + ";");
-
-	console.log("you're retarded");
-	console.log(color[0]);
-	// console.log(newQuote())
-
+	body.style.background = "linear-gradient(rgb(" + color[0] + ", " + color[1] + ", " + color[2] + "), rgb("
+							+ color[3] + ", " + color[4] + ", " + color[5] + ")) no-repeat scroll 0% 0%"
+	topFunction()
 }
-
-
-// btn.addEventListener("click", setGradient);
-
 
 
 btn.addEventListener("click", setGradient);
