@@ -28,13 +28,13 @@ h1 {
 	
 }
 
-h3 {
+/* h3 {
 	font: 'Raleway', sans-serif;
 	color: rgba(255, 255, 255, 0.6);
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.1em;
-}
+} */
 
 p {font-size: 1.5em;}
 
@@ -70,8 +70,8 @@ p .verse {
 
 .btn {
   background-color: #4CAF50; /* Green */
-  height: 15vh;
-  width: 25vh;
+  height: 9vh;
+  width: 18vh;
   border: none;
   color: white;
   padding: 8px 16px;
@@ -79,5 +79,5 @@ p .verse {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vh;
+  font-size: 5vh;
 }
