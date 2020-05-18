@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 10px;
-    height: 150;
+/*     height: 150; */
 }
 
 
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-	font-size: 4vh;
+	font-size: 5vh;
 	font: 'Raleway', sans-serif;
 	color: rgba(255, 255, 255, 0.8);
 	text-align: center;
@@ -53,14 +53,14 @@ h3 {
 	/*margin-top: -50vh;*/
 }
 
-.light {
-	font-size: .6em;
+p .light {
+	font-size: .8em;
 	letter-spacing: .2em;
 
 }
 
-.verse {
-	font-size: 1em;
+p .verse {
+	font-size: 1.2em;
 	letter-spacing: .5em;
 
 }
