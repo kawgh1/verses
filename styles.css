@@ -54,18 +54,16 @@ p {font-size: 1.5em;}
 	/*margin-top: -50vh;*/
 }
 
-p .light {
+.light {
 	font-size: .8em;
 	letter-spacing: .2em;
 	opacity: 1.0;
-
 }
 
-p .verse {
+.verse {
 	font-size: 1.2em;
 	letter-spacing: .5em;
 	opacity: 1.0;
-
 }
 
 .btn {
