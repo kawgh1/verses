@@ -67,7 +67,8 @@ p .verse {
 
 .btn {
   background-color: #4CAF50; /* Green */
-  font-size: 2vh;
+  height: 3vh;
+  width: 5vh;
   border: none;
   color: white;
   padding: 8px 16px;
