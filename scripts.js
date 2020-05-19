@@ -76,6 +76,12 @@ function newQuote(){
 // initial verse and background, new for each visitor not static	
 setGradient();
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 function setGradient() {
 	color = [];
 	setColors();
@@ -84,7 +90,8 @@ function setGradient() {
 	body.style.background = "linear-gradient(rgb(" + color[0] + ", " + color[1] + ", " + color[2] + "), rgb("
 							+ color[3] + ", " + color[4] + ", " + color[5] + ")) no-repeat scroll 0% 0%";
 
-	// console.log(newQuote())
+	// console.log(newQuote());
+	topFunction();
 }
 
 btn.addEventListener("click", setGradient);
