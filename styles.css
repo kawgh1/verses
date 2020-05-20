@@ -1,27 +1,29 @@
 html, body {
     margin: 0;
     padding: 10px;
-/*     height: 150; */
 }
 
 
 
 body {
 	font: 'Raleway', sans-serif;
-	font-size: 1em;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.8);
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: .2em;
+	letter-spacing: .25em;
 	/*height: 100%;*/
 	/*top: 15%;*/
 	/*background: linear-gradient(to right, red, yellow);*/
 }
 
+p {
+	font-size: 1.3em;
+}
+
 h1 {
-	font-size: 4vh;
+	font-size: 3vh;
 	font: 'Raleway', sans-serif;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.85);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .5em;
@@ -29,12 +31,14 @@ h1 {
 	
 }
 
-h4 {
+h2 {
+	color: rgba(255, 255, 255, 1.0);
+	font-weight: 400;
 	font: 'Raleway', sans-serif;
-	color: rgba(255, 255, 255, 0.6);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
+
 }
 
 .content{
@@ -42,22 +46,22 @@ h4 {
 }
 
 .content-inside{
-	padding: 10px;
-/* 	padding-bottom: 50px; */
+	padding: 20px;
+	padding-bottom: 50px;
 }
 
 .footer {
+	font: 'Raleway', sans-serif;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .25em;
 	font-size: .6em;
-	letter-spacing: .2em;
 	height: -10vh;
 	/*margin-top: -50vh;*/
 }
 
-.light {
-		font-size: .6em;
-	letter-spacing: .2em;
 
-}
 
 .btn {
   background-color: #4CAF50; /* Green */
@@ -70,4 +74,16 @@ h4 {
   text-decoration: none;
   display: inline-block;
   font-size: 2vh;
+}
+
+h5{
+	font-weight: 500;
+	font-size: 0.8em;
+	line-height: 1em;
+	font: 'Raleway', sans-serif;
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+
 }
