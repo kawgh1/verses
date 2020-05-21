@@ -1,7 +1,8 @@
 // var css = document.querySelector("h3");
 var btn = document.querySelector(".btn");
 var body = document.getElementById("gradient");
-var verse = document.getElementById("verse");
+var verse1 = document.getElementById("verse1");
+var verse2 = document.getElementById("verse2");
 
 var p1 = document.getElementById("p1");
 var p2 = document.getElementById("p2");
