@@ -88,8 +88,8 @@ h3 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-   height: 4em;
-  width: 10em;
+   height: 3em;
+  width: 9em;
 }
 
 .btn:hover { font-weight: 600; }
