@@ -79,9 +79,10 @@ h3 {
 
 
 .btn {
-  background-color: #4CAF50; /* Green */
+  background-color: mediumseagreen; /* Green */
   font-size: 1.5em;
   letter-spacing: .5em;
+  cursor: pointer;
   border: none;
   color: white;
   text-align: center;
@@ -89,6 +90,15 @@ h3 {
   display: inline-block;
    height: 4em;
   width: 10em;
+}
+
+.btn:hover { font-weight: 600; }
+.btn:hover i{ margin-right: 40px; }
+.btn:active {
+	background-color: #4CAF50;
+	font-weight: 600;
+	margin-left: 5px;
+	margin-top: -5px;
 }
 
 h5{
